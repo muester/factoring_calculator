@@ -20,7 +20,8 @@ Syntaxe příkazu je následující:
     1. `t` - bude použit algoritmus **Trial Division**
     2. `p` - bude použit algoritmus **Pollard Rho**
     3. `e` - bude použit algoritmus **LECM**
-    4. `b` - bude použit nejvhodnější algoritmus
+    4. `b` - bude použit "nejvhodnější" algoritmus\
+    *(Ve skutečnosti jsou nejdříve mocí algoritmu **Trial Division** s jistou efektivní fixně danou horní hranicí odstraněny menší dělitele, následně pomocí **Pollard Rho** "středně velké" dělitelé, a zbytek je již rozkládán identicky jako u algoritmu **LECM**)*
     5. Pokud není poskytnut, využije funkce defaultní hodnotu `b`
 
 Příklad použití:
